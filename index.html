@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Some Page Title</title>
+     <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+        <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
+        
+        <script src="js/vendor/modernizr.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/vendor\/1.7.2.jquery.min.js"><\/script>')</script>
+        
+        <script src="lightbox/js/lightbox.js"></script>
+    <script src="js/vendor/prefixfree.min.js"></script>
+        <script src="js/vendor/jquery.slides.min.js"></script>
+        <script src="js/script.js"></script>
+  <script>
+        $(function() {
+          $('#slides').slidesjs({	
+            height: 400,
+            navigation: false,
+            pagination: false,
+            effect: {
+              fade: {
+                speed: 500
+              }
+            },
+            callback: {
+                start: function(number)
+                {			
+                    $("#slider_content1,#slider_content2,#slider_content3").fadeOut(100);
+                },
+                complete: function(number)
+                {			
+                    $("#slider_content" + number).delay(100).fadeIn(200);
+                }		
+            },
+        play: {
+                active: false,
+                auto: true,
+                interval: 3000,
+             pauseOnHover: true,
+                effect: "fade"
+            }
+          });
+        });
+        </script>
+	</head>
+
+	<body>
+        <header>
+            <div class="toggleMobile">
+        <span class="menu1"></span>
+                <span class="menu2"></span>
+                <span class="menu3"></span>
+            </div>
+            <div id="mobileMenu">
+               <ul>
+                    <li><a href="www.google.com">Home</a></li>
+               <li><a href="www.google.com">Other Page</a></li>
+                  <li><a href="www.google.com">Woah</a></li>
+                </ul>
+         </div>           
+            <h1>Zach's Thing</h1>
+            <p>Doing the tutorial</p>           
+            
+            <nav>
+            	<h2 class="hidden">Navigation</h2>
+                <ul>
+                    <li><a href="www.google.com">Home</a></li>
+                    <li><a href="www.google.com">Other Page</a></li>
+                    <li><a href="www.google.com">Woah</a></li>
+                </ul>
+            </nav>
+     </header>
+        <section class="container">
+        	<h2 class="hidden">Lorem Ipsum</h2>
+            <article id="slider_content1">
+                <h3>It works!</h3>
+                <p>
+Took about 20 years but I finally got it working!<a href="www.google.com" class="responsive_button">Magic Button!</a></p>
+                <a class="button" href="www.google.com">Magic Button!</a>
+            </article>
+            <article id="slider_content2">
+                <h3>Colorful Blocks!</h3>
+                <p>Look how colorful they are! Wow.<a href="www.google.com" class="responsive_button">Magic Button!</a></p>
+                <a class="button" href="www.google.com">Magic Button!</a>
+            </article>
+            <article id="slider_content3">
+                <h3>More Color!</h3>
+                <p>Colorful blocks and now balls! The only thing we need now is triangles...<a href="www.google.com" class="responsive_button">Magic Button!</a></p>
+                <a class="button" href="www.google.com">Magic Button!</a>
+            </article>
+            <div id="slides">
+                <img src="http://1.bp.blogspot.com/_Aiir986oY1I/TDvbnGC7TDI/AAAAAAAAAFE/scDhGER1Gww/s1600/-4+copy.jpg" alt="Not working">
+                <img src="http://www.tripwire.com/state-of-security/wp-content/uploads/cache//shutterstock_806930981/613064545.jpg" alt="Not working">    	
+                <img src="http://mindengine.net/public/clipart/color-balls.jpg" alt="Not working">
+            </div>
+        </section>
+        <section id="spacer">  
+        	<h2 class="hidden">Dolor sit amet</h2>          
+            <p>Did you know you can search a site with nothing on it?!</p>
+            <div class="search">
+        <form action="#">
+            <input type="text" name="sitesearch" value="Do a thing..."/>
+                    <input type="submit" name="start_search" class="button" value="Search"/>
+                </form>
+            </div>            
+        </section>
+        <section id="four_columns">
+            <h2>
+                Lorem ipsum
+            </h2>    
+            <article class="img-item">
+            	<h3 class="hidden">Dolor sit amet</h3>
+                <figure>  
+                    <a href="http://ow.ly/YFkjP" rel="lightbox" title="Some title">
+                        <span class="thumb-screen"></span>
+                        <img class="fixer" src="http://ow.ly/YFkjP" alt="Not working"/>
+                    </a>
+         <figcaption>
+               <strong>
+                  Photo by: Magic Place Holder Man
+                        </strong>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </figcaption>
+                </figure>
+    </article>
+            <article class="img-item">
+     	<h3 class="hidden">Sit Amet</h3>
+                <figure>
+                    <a href="http://ow.ly/YFkjP" rel="lightbox" title="Some title">
+                        <span class="thumb-screen"></span>
+                        <img class="fixer" src="http://ow.ly/YFkjP" alt="Not working"/>
+                    </a>
+                    <figcaption>
+                        <strong>
+                            Photo by: Magic Place Holder Man
+                        </strong>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="img-item">
+            	<h3 class="hidden">Dolor Sit</h3>
+                <figure>
+                    <a href="http://ow.ly/YFkjP" rel="lightbox" title="Some title">
+                        <span class="thumb-screen"></span>
+                        <img class="fixer" src="http://ow.ly/YFkjP" alt="Not working"/>
+                    </a>
+                    <figcaption>
+                <strong>
+                             Photo by: Magic Place Holder Man
+                        </strong>
+                 Too lazy to just link actual pictures...
+              </figcaption>
+                </figure>      </article>
+            <article class="img-item">
+            	<h3 class="hidden">Lorem Ipsum</h3>
+                <figure>
+                    <a href="http://ow.ly/YFkjP" rel="lightbox" title="Some title">
+                        <span class="thumb-screen"></span>
+                        <img class="fixer" src="http://ow.ly/YFkjP" alt="Not working"/>
+                    </a>
+                    <figcaption>
+         <strong>
+                             Photo by: Magic Place Holder Man
+    </strong>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+             </figcaption>         </figure>
+            </article>
+            <br class="clear"/>
+        </section>
+  
+<section id="boxcontent">
+        	<h2 class="hidden">Adipiscing</h2>
+       <article>            	               
+                <img class="fixer2" src="http://ow.ly/YFkjP" alt="Not working"/>                
+                <h3>Lorem ipsum</h3>
+                <p>        	
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              </p>
+            </article>
+            <article>            	     
+                <img class="fixer2" src="http://ow.ly/YFkjP" alt="Not working"/>              
+        <h3>Lorem</h3>
+                <p>        	
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+            </article>
+            <article>            	    
+                <img class="fixer2" src="http://ow.ly/YFkjP" alt="Not working"/>                
+                <h3>Ipsum</h3>
+                <p>        	
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>      </article>
+            <br class="clear"/>
+        </section>
+        
+        <section id="text_columns"> 	<h2 class="hidden">Blindtext</h2>
+            <article class="column1">             <h3>Dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Woah. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Random words  here.</p>
+            </article>
+            <section class="column2">
+     	<h3 class="hidden">Lorem Impsum</h3>
+                <article class="row">  
+        	<h4 class="hidden">Dolor sit</h4>                  
+                    <img src="http://ow.ly/YFkjP" width="80" class="rocket" alt="Not working"/>
+                    <p>Spin!</p>
+                </article> 
+                <article class="row">
+                	<h4 class="hidden">Ipsum</h4>                
+                    <img src="http://ow.ly/YFkjP" width="80" class="clock" alt="Not working"/>
+                    <p>Spin and shake!</p>
+                </article>            </section>
+        </section>
+        <footer>
+        	<h2 class="hidden">Our footer</h2>
+      <section class="wrapper">
+            	<h3 class="hidden">Footer content</h3>         <article class="column">
+                    <h4>Lorem ipsum</h4>
+                    This is where you might put some legal stuff. Who knows. Maybe you could put some funny jokes here? I don't know. In with the lorem! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                </article>
+                <article class="column midlist">
+                    <h4>A list!</h4>
+                    <ul>
+                   <li><a href="www.google.com">List item thing!</a></li>
+                        <li><a href="www.google.com">Another one WOW!</a></li>
+                        <li><a href="www.google.com">THREE! A RECORD AMOUNT OF ITEMS!</a></li>
+                        <li><a href="www.google.com">Another list item...</a></li>
+                    </ul>
+                </article>
+                <article class="column rightlist">
+                    <h4>Dolor sit amet</h4>
+                    <ul>
+                        <li><a href="www.google.com"><img src="http://ow.ly/YFkjP" width="80" alt="Not working"/><span>Only one would work. So I only did one.</span></a></li>
+                    </ul>
+             <br class="clear"/>
+                </article>
+            </section>
+        </footer>
+	</body>
+</html>
